@@ -30,7 +30,9 @@ class Settings
         LARAVEL_DUMP = 'dump',
 
         DOCTRINE_DUMP = 'Doctrine::dump',
-        DOCTRINE_DUMP_2 = '\Doctrine\Common\Util\Debug::dump';
+        DOCTRINE_DUMP_2 = '\Doctrine\Common\Util\Debug::dump',
+
+        ROADRUNNER_DUMP = 'dumprr';
 
     /**
      * If path contains directory, only file with these extensions are checked
@@ -127,6 +129,10 @@ class Settings
                     case '--doctrine':
                         $setting->functionsToCheck[] = self::DOCTRINE_DUMP;
                         $setting->functionsToCheck[] = self::DOCTRINE_DUMP_2;
+                        break;
+
+                        case '--roadrunner':
+                        $setting->functionsToCheck[] = self::ROADRUNNER_DUMP;
                         break;
 
                     default:
