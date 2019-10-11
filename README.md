@@ -48,6 +48,7 @@ Options for run
 - `--doctrine` - check dump: `Doctrine::dump`, `\Doctrine\Common\Util\Debug::dump`
 - `--symfony` - check dump: `dump`, `VarDumper::dump`, `VarDumper::setHandler`, `VarDumper::dd`
 - `--laravel` - check dump: `dd`, `dump`
+- `--roadrunner`  Enable support for Roadrunner: `dumprr`
 - `--no-colors` - disable colors from output
 - `--exclude folder/` - exclude *folder/* from check
 - `--extensions php,phpt,php7` - map file extensions for check
